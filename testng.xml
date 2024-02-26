@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" thread-count="2" >
+ 
+<groups>
+<run>			
+</run>
+</groups>
+ <listeners>
+<listener class-name="testPack.ExtentReportManager"></listener>
+</listeners>
+	
+<test thread-count="5" name="Chrome Test">
+<parameter name="browser" value="chrome" ></parameter>
+<parameter name="url"  value="https://cognizantonline.sharepoint.com/sites/Be.Cognizant/SitePages/Home.aspx"></parameter>
+ 
+	<classes>
+<class name="testPack.BaseClass"/>
+</classes>
+</test> <!-- Test -->  
+<!--
+<test thread-count="5" name="Edge Test">
+<parameter name="browser" value="edge" ></parameter>
+<parameter name="url"  value="https://cognizantonline.sharepoint.com/sites/Be.Cognizant/SitePages/Home.aspx"></parameter>
+ 
+	<classes>
+<class name="testPack.BaseClass"/>
+</classes>
+</test> 
+-->
+</suite> <!-- Suite -->
